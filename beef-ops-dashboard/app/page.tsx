@@ -1,7 +1,7 @@
 'use client';
 import React, { useMemo, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Slider } from "@/components/ui/slider";
+import { Card, CardContent } from "../components/ui/card";
+import { Slider } from "../components/ui/slider";
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { ArrowUpRight, ArrowDownRight, Gauge, Store, Sparkles, TrendingUp } from "lucide-react";
 
@@ -60,7 +60,7 @@ export default function BeefOpsDemoDashboard() {
     const weeks = ["Sem 1","Sem 2","Sem 3","Sem 4","Sem 5","Sem 6","Sem 7","Sem 8"];
     const waArr = [120, 150, 165, 180, 210, 230, 205, 260];
     const emArr = [200, 215, 225, 240, 255, 270, 245, 280];
-    const buys =  [35,  40,  44,  50,  62,  68,  58,  78];
+    const buys  = [35, 40, 44, 50, 62, 68, 58, 78];
     const rows = weeks.map((w,i)=>{
       const wa = waArr[i];
       const email = emArr[i];
@@ -293,3 +293,4 @@ export default function BeefOpsDemoDashboard() {
     </div>
   );
 }
+
